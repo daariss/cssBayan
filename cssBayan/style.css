@@ -1,4 +1,41 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
+    background-color: lavender;
 }
+.title{
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+    margin: 10px auto;
+}
+.bayan {
+    max-width: 1920 px;
+    margin: 20px auto;
+
+}
+.bayan-title {
+    margin: 15px;
+    font-size: 2em;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.bayan-title:hover {
+    background-color: rgb(169, 156, 248);}
+.bayan-input {
+    appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.bayan-mem {
+    display: none;}
+
+.bayan-input:checked + .bayan-mem{
+    display: block;
+    /* border: 5px solid slateblue; */
+}
+
+
+
