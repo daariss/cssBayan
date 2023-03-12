@@ -18,12 +18,14 @@ body {
     width: 66.66%;
 }
 .bayan-title {
-    display: block;
+    display:block;
     cursor: pointer;
-    text-align: left;
     font-style: italic;
-    border-top: 2.5px dotted;
     margin-bottom: 0.75%;
+}
+.bayan-title::after{
+    content: "<";
+    margin: 0 0 0 98%;
 }
 @media (max-width:3840px){
     .bayan {
@@ -76,7 +78,6 @@ body {
     transition: all 0.5s ease-out 0s;
 }
 
-
 .bayan-input {
     appearance: none;
     width: 0;
@@ -116,4 +117,7 @@ img {
     font-weight: 500;
     color: black;
     border-top: 5px dotted;
+}
+.bayan-item:hover > .bayan-title::after {
+    content: "^";
 }
