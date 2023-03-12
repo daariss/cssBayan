@@ -15,14 +15,15 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     margin: 0 auto;
-    width: 66%;
+    width: 66.66%;
 }
 .bayan-title {
     display: block;
     cursor: pointer;
     text-align: left;
     font-style: italic;
-    border-top: 2px solid ;
+    border-top: 2.5px dotted;
+    margin-bottom: 0.75%;
 }
 @media (max-width:3840px){
     .bayan {
@@ -36,7 +37,6 @@ body {
     }
 }
 @media (max-width:1920px){
-    
     .bayan {
         max-width: 1536px;
     }
@@ -92,8 +92,8 @@ body {
 }
 
 img {
-    width: 33%;
-    height: 33%;
+    width: 25%;
+    height: 25%;
     margin: auto;
     margin-bottom: 4%;
     border-radius: 4%;
@@ -115,4 +115,5 @@ img {
 .bayan-item:hover > .bayan-title {
     font-weight: 500;
     color: black;
+    border-top: 5px dotted;
 }
