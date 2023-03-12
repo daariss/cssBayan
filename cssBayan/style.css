@@ -6,6 +6,7 @@ body {
 .title{
     font-weight: 700;
     font-style: italic;
+    font-size: 3em;
 }
 .bayan {
     max-width: 1920px;
@@ -64,6 +65,7 @@ body {
     text-align: left;
     font-style: italic;
     border-top: 2px solid ;
+    font-size: 2em;
 }
 
 .bayan-input {
