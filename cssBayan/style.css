@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: lavender;
+}
+.title{
+    font-weight: 700;
+    font-style: italic;
+}
+.bayan {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 66.66%;
+}
+.bayan-title {
+    display:block;
+    cursor: pointer;
+    font-style: italic;
+    padding-bottom: 0.75%;
+    font-weight: 500;
+}
+.bayan-title::after{
+    content: "<";
+    margin: 0 0 0 98%;
+}
+@media (max-width:3840px){
+    .bayan {
+        max-width: 2000px;
+    }
+    .title{
+        font-size: 3.25em;
+    }
+    .bayan-title{
+        font-size: 2.75em;
+    }
+}
+@media (max-width:1920px){
+    .bayan {
+        max-width: 1536px;
+    }
+    .title{
+        font-size: 2.25em;
+    }
+    .bayan-title{
+        font-size: 1.75em;
+    }
+}
+@media (max-width:819px){
+    .bayan {
+        max-width: 656px;
+    }
+    .title{
+        font-size: 1.425em;
+    }
+    .bayan-title{
+        font-size: 1.25em;
+    }
+}
+@media (max-width:320px){
+    .bayan {
+        max-width: 256px;
+    }
+    .title{
+        font-size: 1.25em;
+    }
+    .bayan-title{
+        font-size: 1em;
+    }
+}
+
+.bayan-item {
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease-out 0s;
+    margin: 1% auto;
+}
+
+.bayan-input {
+    appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.bayan-mem {
+    display: none;
+}
+
+.bayan-input:checked ~ .bayan-mem{
+    display: flex;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    margin-bottom: 4%;
+    border-radius: 4%;
+}
+
+.bayan-item:hover {
+    background-color: rgb(169, 156, 248);
+}
+.bayan-item:hover > .bayan-mem{
+    display: flex;
+}
+
+.bayan:hover .bayan-title {
+    color: darkmagenta;
+}
+.bayan .bayan-title {
+    color: darkmagenta;
+}
+.bayan-item:hover > .bayan-title {
+    color: black;
+    border-top: 5px dotted;
+}
+.bayan-item:hover > .bayan-title::after {
+    content: "^";
+}
+.bayan-input:checked + .bayan-title {
+    color: black;
+    border-top: 5px dotted;
+    background-color: rgb(169, 156, 248);
+}
+.bayan-input:checked ~ .bayan-mem {
+    background-color: rgb(169, 156, 248);
+}
+.bayan-input:checked + .bayan-title::after {
+    content: "^";
+}
