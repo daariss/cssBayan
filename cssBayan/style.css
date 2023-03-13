@@ -21,7 +21,8 @@ body {
     display:block;
     cursor: pointer;
     font-style: italic;
-    margin-bottom: 0.75%;
+    padding-bottom: 0.75%;
+    font-weight: 500;
 }
 .bayan-title::after{
     content: "<";
@@ -76,6 +77,7 @@ body {
     cursor: pointer;
     width: 100%;
     transition: all 0.5s ease-out 0s;
+    margin: 1% auto;
 }
 
 .bayan-input {
@@ -88,7 +90,7 @@ body {
     display: none;
 }
 
-.bayan-input:checked + .bayan-mem{
+.bayan-input:checked ~ .bayan-mem{
     display: flex;
 }
 
@@ -108,16 +110,26 @@ img {
 }
 
 .bayan:hover .bayan-title {
-    color: darkslateblue;
+    color: darkmagenta;
 }
 .bayan .bayan-title {
     color: darkmagenta;
 }
 .bayan-item:hover > .bayan-title {
-    font-weight: 500;
     color: black;
     border-top: 5px dotted;
 }
 .bayan-item:hover > .bayan-title::after {
+    content: "^";
+}
+.bayan-input:checked + .bayan-title {
+    color: black;
+    border-top: 5px dotted;
+    background-color: rgb(169, 156, 248);
+}
+.bayan-input:checked ~ .bayan-mem {
+    background-color: rgb(169, 156, 248);
+}
+.bayan-input:checked + .bayan-title::after {
     content: "^";
 }
